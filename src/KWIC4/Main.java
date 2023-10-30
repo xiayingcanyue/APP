@@ -4,8 +4,8 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        File inFile = new File("D:\\Desktop\\SoftwareTask\\input.txt");
-        File outFile = new File("D:\\Desktop\\SoftwareTask\\output.txt");
+        File inFile = new File(".\\src\\input.txt");
+        File outFile = new File(".\\src\\output.txt");
         Pipe pipe1 = new Pipe();
         Pipe pipe2 = new Pipe();
         Pipe pipe3 = new Pipe();

@@ -1,3 +1,5 @@
+package KWIC1;
+
 import java.io.*;
 import java.util.*;
 
@@ -11,10 +13,10 @@ public class KWIC1 {
 
         KWIC1 kwic = new KWIC1();
 
-        kwic.input("D:\\Desktop\\SoftwareTask\\input.txt");
+        kwic.input(".\\src\\input.txt");
         kwic.shift();
         kwic.alphabetizer();
-        kwic.output("D:\\Desktop\\SoftwareTask\\output.txt");
+        kwic.output(".\\src\\output.txt");
     }
 
 

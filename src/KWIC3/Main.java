@@ -5,10 +5,10 @@ public class Main {
 
         KWICSubject kwicSubject = new KWICSubject();
 
-        Input input = new Input("D:\\Desktop\\SoftwareTask\\input.txt");
+        Input input = new Input(".\\src\\input.txt");
         Shift shift = new Shift(input.getLineTxt());
         Alphabetizer alphabetizer = new Alphabetizer(shift.getKwicList());
-        Output output = new Output(alphabetizer.getKwicList(), "D:\\Desktop\\SoftwareTask\\output.txt");
+        Output output = new Output(alphabetizer.getKwicList(), ".\\src\\output.txt");
 
 
         kwicSubject.addObserver(input);

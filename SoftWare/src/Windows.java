@@ -47,7 +47,7 @@ public class Windows extends JFrame {
                 try {
                     // 动态加载类
                     URLClassLoader classLoader = new URLClassLoader(new URL[]{new URL("file:///D:\\Desktop\\SoftwareTask\\KWIC\\src\\")});
-                    Class<?> myClass = classLoader.loadClass("KWIC1");
+                    Class<?> myClass = classLoader.loadClass("KWIC1.KWIC1");
                     // 调用类的静态方法
                     Method method = myClass.getMethod("main", String[].class);
                     String[] args = new String[]{};
@@ -55,7 +55,7 @@ public class Windows extends JFrame {
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
-                File file = new File("D:\\Desktop\\SoftwareTask\\output.txt");
+                File file = new File(".\\src\\output.txt");
                 try {
                     Desktop.getDesktop().open(file);
                 } catch (IOException ioException) {
@@ -81,7 +81,7 @@ public class Windows extends JFrame {
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
-                File file = new File("D:\\Desktop\\SoftwareTask\\output.txt");
+                File file = new File(".\\src\\output.txt");
                 try {
                     Desktop.getDesktop().open(file);
                 } catch (IOException ioException) {
@@ -106,7 +106,7 @@ public class Windows extends JFrame {
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
-                File file = new File("D:\\Desktop\\SoftwareTask\\output.txt");
+                File file = new File(".\\src\\output.txt");
                 try {
                     Desktop.getDesktop().open(file);
                 } catch (IOException ioException) {
@@ -130,7 +130,7 @@ public class Windows extends JFrame {
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
-                File file = new File("D:\\Desktop\\SoftwareTask\\output.txt");
+                File file = new File(".\\src\\output.txt");
                 try {
                     Desktop.getDesktop().open(file);
                 } catch (IOException ioException) {
